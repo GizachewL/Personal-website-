@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Educational Platform - Learn, Share, and Grow Together">
+    <meta name="theme-color" content="#10b981">
+    <title>EduHub - Global Learning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75'>📚</text></svg>">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#" class="logo">📚 EduHub</a>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#upload">Upload</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><button class="theme-toggle" id="themeToggle">🌙</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="fade-in">Learn Without Limits</h1>
+                <p class="fade-in-delayed">The Global Educational Platform for Everyone</p>
+                <p class="hero-description fade-in-delayed-2">Access thousands of resources, share your knowledge, and grow together with millions of learners worldwide</p>
+                <div class="hero-buttons fade-in-delayed-3">
+                    <a href="#resources" class="btn btn-primary">Explore Resources</a>
+                    <a href="#upload" class="btn btn-secondary">Share Knowledge</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Why Choose EduHub?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📖</div>
+                    <h3>Comprehensive Resources</h3>
+                    <p>Access thousands of educational materials including PDFs, videos, presentations, and interactive content</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h3>Global Community</h3>
+                    <p>Connect with millions of learners and educators from around the world</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⬆️</div>
+                    <h3>Easy Upload</h3>
+                    <p>Upload any type of file and share instantly with the community</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="resources">
+        <div class="container">
+            <h2>Browse Resources</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <span class="resource-type">📄 PDF</span>
+                    <h3>Introduction to Biology</h3>
+                    <p>Comprehensive guide to fundamental biological concepts</p>
+                    <button class="btn btn-sm">Download</button>
+                </div>
+                <div class="resource-card">
+                    <span class="resource-type">🎥 Video</span>
+                    <h3>Calculus Mastery Course</h3>
+                    <p>Complete video tutorial series covering all calculus topics</p>
+                    <button class="btn btn-sm">Watch</button>
+                </div>
+                <div class="resource-card">
+                    <span class="resource-type">💻 Code</span>
+                    <h3>Python Programming</h3>
+                    <p>Learn Python with practical examples and exercises</p>
+                    <button class="btn btn-sm">Explore</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upload Section -->
+    <section id="upload" class="upload">
+        <div class="container">
+            <h2>Share Your Knowledge</h2>
+            <div class="upload-container">
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-icon">📤</div>
+                    <h3>Drag and Drop Files Here</h3>
+                    <p>or click to browse</p>
+                    <input type="file" id="fileInput" multiple style="display: none;">
+                </div>
+
+                <form class="upload-form" id="uploadForm">
+                    <div class="form-group">
+                        <label>Resource Title *</label>
+                        <input type="text" placeholder="Enter title" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Category *</label>
+                        <select required>
+                            <option value="">Select category</option>
+                            <option value="science">Science</option>
+                            <option value="math">Mathematics</option>
+                            <option value="tech">Technology</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Description *</label>
+                        <textarea placeholder="Describe your resource" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Upload</button>
+                    <p class="form-message" id="uploadMessage"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h3>📧 Email</h3>
+                        <a href="mailto:info@eduhub.com">info@eduhub.com</a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <p class="form-message" id="formMessage"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 EduHub. Making education accessible to all.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
