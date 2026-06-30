@@ -1,0 +1,16 @@
+my-backend-project/
+│
+├── server.js
+├── package.json
+├── .gitignore
+├── .env
+├── README.md
+│
+├── config/
+│   └── db.js
+├── models/
+│   └── user.js
+├── controllers/
+│   └── userController.js
+└── routes/
+    └── userRoutes.js
